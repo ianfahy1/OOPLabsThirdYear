@@ -1,0 +1,19 @@
+package ie.atu.sw;
+
+public class Runner {
+	
+	public static void main(String[] args) {
+		
+		//Mutable object can be changed
+		var p1 = new Person1("Ian", 22, "ianfahy1@gmail.com");
+		p1.setAge(90);
+		
+		System.out.println(p1);
+		System.out.println(System.identityHashCode(p1));
+		
+		
+		//////////
+		
+		var p2 = new Person("Ian", 22, "ianfahy1@gmail.com")
+	}
+}

@@ -1,0 +1,18 @@
+1.	Using an enum rather than public static final classes improves code clarity, by
+	grouping related constants and the way they behave together. This reduces 
+	redundancy, and creates safer code as it prevents data from being used or set
+	incorrectly.
+   
+2. 	Enums garuntee that only pre-defined, valid inputs can be used. This stops users
+	from making an error with a String, which would not be caught by a compiler and
+	would give an error at runtime.
+
+3.	Managing enums to add a new currency to the list is much more straightforward,
+	and doesn't require the user or programmer to change multiple fields. It also
+	prevents mistakes being made.
+
+4. 	Comparing enums using '==' instead of the .equals() method that is used for
+	Strings is faster as we are comparing numbers instead of a character array.
+	Comparing the value of numbers is much more efficient than cycling through every
+	value in a character array. .equals() compares the memory location of each value
+	in that array which is a long, inefficient task.

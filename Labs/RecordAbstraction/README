@@ -1,0 +1,19 @@
+1. 	Java records demonstrate abstraction by completely leaving out code for methods
+	like .toString(), .equals(), .hashCode() etc., hiding complexity. This makes them 
+	easier to read and understand. They are also immutable which prevents systems in
+	a program from interfering with code they don't need to interact with.
+	
+2.	Records automatically understand the .toString, .equals, .hasCode methods so they
+	do not need to be defined at all. Records also automatically provide a constructor
+	with all parameters, and getter methods for all fields.
+	
+3.	Records are immutable b y default as creating a truly immutable class, manually
+	is extremely difficult. The immutable nature of a record makes them extremely
+	thread safe, reducing bugs.
+	
+4.	You would choose a record over a traditional class if you did not need to be 
+	able to change anything within that class. A record has no traditional setter,
+	and the only way to change a parameter in a record object is to create a method
+	with the record that creates a new instance of that object with your desired
+	change. i.e. you only use a record over a class when you do not want anything 
+	about your class to be mutable.

@@ -1,0 +1,20 @@
+package ie.atu.sw;
+
+public class PatternMatch {
+
+	//Using records in records
+	record Point(int x, int y) {}
+	record Circle(Point centre, int radius) {}
+	record Rectangle(Point topLeft, Point bottomRight) {}
+	
+	
+	
+	
+	public static double are(Object shape) {
+		return switch(shape) {
+			case Circle(Point centre, int radius) -> Math.PI * radius * radius;
+		
+			default -> throw IllegalArgumentException("Unknown shape")
+		};
+	}
+}

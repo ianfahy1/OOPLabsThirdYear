@@ -1,0 +1,9 @@
+package ie.atu.sw;
+
+public class Runner {
+	
+	public static void main(String[] args) {
+		var p1 = new Person1("Ian", 22, "ianfahy1@gmail.com");
+		System.out.println(System.identityHashCode(p1));
+	}
+}

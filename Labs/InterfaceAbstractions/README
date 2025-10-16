@@ -1,0 +1,28 @@
+1. 	How does using interfaces make the PaymentService class more flexible?:
+
+	Interfaces make PaymentService more flexible by acting as an immutable
+	contract. This allows for multiple classes to use the same methods. It 
+	also allows for polymorphism to be easier implemented.
+	
+2. 	What would we need to change if we wanted to add cryptocurrency payments?:
+
+	To add cyrptocurrency payments we would firstly need to change the 
+	"getPaymentMethod" method to allow the use of crypto instead of only
+	credit cards. We would also need to add variables in "CreditCardProcessor"
+	for things such as wallet addresses, to accommodate crypto. 
+	
+3.  How does abstraction help with testing and maintenance?
+	
+	Abstraction makes systems simpler by isolating components that are universally
+	common. It simplifies testing by getting rid of unnecessary details, making it 
+	possible to create mock objects, which makes unit testing much easier.
+	It makes maintenance easier by isolating changes to a single part of the code,
+	this prevents a domino effect which could ruin a codebase.
+	
+4. 	What are the benefits of a default method in an interface?
+
+	Interface methods need to be either abstract, or the need to be defined as default.
+	Default methods allow you to add functionality to a program without the risk of
+	breaking the rest of your code base. For example; we added a "validatePayment"
+	method that allows your interface to ensure payments are above 0 If this didn't
+	work, it wouldn't break the rest of the code.

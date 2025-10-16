@@ -1,0 +1,11 @@
+package ie.atu.sw;
+
+public enum Currency {
+
+	USD (),
+	EUR (),
+	JPY (),
+	GBP (),
+	BTC  ()
+	
+}

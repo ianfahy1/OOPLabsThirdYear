@@ -1,0 +1,12 @@
+package ie.atu.sw;
+
+public class CurRunner {
+
+	public static void main(String[] args) {
+		var euro = Currency.EUR;
+		var bit = Currency.BTC;
+		
+		var res = euro.convertTo(bit, 10_000, 0.000011);
+		System.out.println(res);
+	}
+}

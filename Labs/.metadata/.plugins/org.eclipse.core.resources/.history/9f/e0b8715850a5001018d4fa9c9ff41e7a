@@ -1,0 +1,10 @@
+1. 	Java records demonstrate abstraction by completely leaving out code for methods
+	like .toString(), .equals(), .hashCode() etc.. This makes them easier to read
+	and understand. They are also immutable which prevents systems in a program from
+	interfering with code they don't need to interact with.
+	
+2.	Records automatically understand the .toString, .equals, .hasCode methods so they
+	do not need to be defined at all. Records also automatically provide a constructor
+	with all parameters, and getter methods for all fields.
+	
+3.	

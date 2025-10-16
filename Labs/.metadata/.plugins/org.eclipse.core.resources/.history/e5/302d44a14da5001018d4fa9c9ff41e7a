@@ -1,0 +1,11 @@
+package ie.atu.sw;
+
+public record Employee(String name, 
+					   String department, 
+					   double salary, 
+					   boolean active) {
+	
+	 public Employee withSalary(double new salary) {
+		 return new Employee(name, department, salary, active);
+	 }
+}

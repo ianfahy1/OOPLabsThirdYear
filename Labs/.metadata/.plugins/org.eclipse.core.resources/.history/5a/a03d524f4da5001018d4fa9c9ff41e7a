@@ -1,0 +1,9 @@
+package ie.atu.sw;
+
+public record Employee (String name, 
+					   String department, 
+					   double salary, 
+					   boolean active) {
+	
+	 
+}

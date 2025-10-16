@@ -1,0 +1,18 @@
+package ie.atu.sw;
+
+import static ie.atu.sw.Runner.DayOfWeek.*;
+
+public class Runner {
+
+	public enum DayOfWeek{
+		MONDAY, TUESDAY, WEDNESDAY, THURSDAY,
+		FRIDAY, SATURDAY, SUNDAY
+	}
+	
+	void main() {
+		var day = DayOfWeek.FRIDAY;
+		
+		day = MONDAY;
+		
+	}
+}
