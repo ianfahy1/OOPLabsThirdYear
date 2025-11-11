@@ -1,8 +1,0 @@
-package ie.atu.sw;
-
-public class PatternMatch {
-
-	record Point(int x, int y) {};
-	record Circle(Point centre, int radius) {};
-	
-}

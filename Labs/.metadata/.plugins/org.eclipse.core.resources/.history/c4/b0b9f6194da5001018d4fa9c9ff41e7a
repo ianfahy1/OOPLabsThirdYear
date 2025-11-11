@@ -1,8 +1,0 @@
-package ie.atu.sw;
-
-public record Point(int x, int y) {
-
-	public Point() {
-		// TODO Auto-generated constructor stub
-	}
-}
