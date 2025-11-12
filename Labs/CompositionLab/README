@@ -1,0 +1,21 @@
+1. 	Aggregation is a strong form of composition, child Objects 
+	define parent Objects at a class level meaning they won't
+	be out of scope even if the parent object is destroyed.
+	
+	Composition means Object1 defines an instance of object2 
+	at class level, but no other object has access to it. 
+	This means the object2 is completely encapsulated
+	inside of object1. If object2 is destroyed so is object1.
+	
+2.	Composition is chosen over inheritance when Objects have a 
+	'has-a' relationship. Where as inheritance is chosen when
+	objects have a 'is-a' relationship.
+	
+3.	Encapsulation strengthens composition as it bundles together
+	related data and methods. This helps implementation (simplifies)
+	and data integrity (hiding an objects internal state, only
+	exposing relevant methods). 
+	
+4. 	Composition makes testing easier by promoting modularity.
+	this reduces dependencies, making testing isolated functions
+	easier, and quicker;

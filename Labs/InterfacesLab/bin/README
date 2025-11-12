@@ -1,0 +1,22 @@
+1.	Interfaces have a contract driven design meaning they
+	are declarations, and don't give any hint on implementation.
+	They encapsulate what and object can do, but not how it does
+	it. They also foster polymorphism.	
+		Abstract classes offer a more rigid set of instructions
+	on how an object can be used. Also only allow one abstract
+	class to be implemented.
+	
+2.	Interfaces are called a programming contract as they define 
+	what methods a class has to implement. This is done to enforce
+	consistency, allowing for flexibility. The breaking of this
+	contract can result in code failing, unexpected errors, or
+	unexpected data being used. Can also result in incorrect outputs.
+	
+3.	Interfaces are used when consistency is needed across unrelated 
+	classes. Class inheritance is used when a group of related classes
+	need some common behaviours, but still need private, unrelated
+	implementation.
+	
+4.	Lambda expressions are a block of code that takes in parameters
+	and returns a value. They make interfaces more convenient to
+	use by making them more readable and less verbose.

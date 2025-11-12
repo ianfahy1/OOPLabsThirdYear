@@ -1,0 +1,16 @@
+1.	Publication is abstract as we have an abstract method inside
+	the class. If we tried to instantiate Publication the program
+	would throw a compiler error as abstract classes cannot
+	be instantiated directly
+	
+2.	Book specializes Publication by adding, city, edition, isbn,
+	and publisher variables. This is added to the title, and year
+	variables already made by Publication.
+	
+3.	Polymorphism allows you to change how a method acts depending
+	on the class its defined in. This is done by making publication
+	abstract.
+
+4.	Composition allows for the changing and replacing of components
+	without affecting the min class. We do this for Citation, as
+	we don't want our citation form to change.

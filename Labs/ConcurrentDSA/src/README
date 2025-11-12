@@ -1,0 +1,20 @@
+1.	Synchronized methods lock all of the buckets on regular
+	collections, which slows down performance. This happens 
+	because multiple threads are trying to get the same lock 
+	simultaneously.
+	
+2.	You would choose a CopyOnWriteArrayList when you have
+	a program that is not weiting to the array list a lot,
+	and mostly performs reads.You use 
+	Collections.synchronizedList() when a program is writing 
+	to the list a lot. Using CopyOnWriteArrayList for a program
+	with a lot of writes slows down performance.
+	
+3.	You dont use Tree type arrays for concurrent programming
+	as they are multi-threaded. This leads to race situations
+	because multiple threads are trying to write concurrently.
+	
+4.	ConcurrentHashMap.compute() is used to turn a get-modify-put
+	operation into an atomic one. An atomic operation cannot be
+	interrupted by other threads, so it is garunteed to complete.
+	
